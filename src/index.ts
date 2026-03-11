@@ -3,6 +3,7 @@ let numbersConverted: number[] = [];
 
 let sum: number = 0;
 let max: number = Number(numbers[0]);
+let min: number = Number(numbers[0]);
 
 
 for (let i = 0; i < numbers.length; i++) {
@@ -11,7 +12,11 @@ for (let i = 0; i < numbers.length; i++) {
     sum += number;
 
     if (number > max) {
-        max = number
+        max = number;
+    }
+    
+    if (number < min) {
+        min = number;
     }
 };
 
@@ -22,3 +27,4 @@ console.log("Numbers: ", numbersConverted);
 console.log("Sum: ", sum);
 console.log("Average: ", average);
 console.log("Max Number: ", max);
+console.log("Min Number:", min);
