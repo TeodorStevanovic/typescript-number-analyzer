@@ -1,10 +1,10 @@
 "use strict";
 let numbers = ["10", "5", "20", "8", "3"];
-let numberConverted = [];
+let sum = 0;
 for (let i = 0; i < numbers.length; i++) {
-    numberConverted.push(Number(numbers[i]));
+    sum += Number(numbers[i]);
 }
 ;
 console.log(numbers);
-console.log(numberConverted);
+console.log(sum);
 //# sourceMappingURL=index.js.map
