@@ -6,9 +6,14 @@ let max: number = Number(numbers[0]);
 let min: number = Number(numbers[0]);
 let doubleNum: number[] = [];
 
-const doubleValue = (value: any) => {
-    return value + value;
+const doubleValueSafe = (value: unknown) => {
+    if (typeof value === "number") {
+        return value * 2;
+    }
+    
+    return undefined;
 };
+
 
 for (let i = 0; i < numbers.length; i++) {
     let number = Number(numbers[i]);
@@ -23,7 +28,11 @@ for (let i = 0; i < numbers.length; i++) {
         min = number;
     }
 
-    doubleNum.push(doubleValue(number));
+    let result = doubleValueSafe(number);
+
+    if (result !== undefined) {
+        doubleNum.push(result);
+    }
 };
 
 let average: number = sum / numbersConverted.length;
