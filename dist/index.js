@@ -4,6 +4,10 @@ let numbersConverted = [];
 let sum = 0;
 let max = Number(numbers[0]);
 let min = Number(numbers[0]);
+let doubleNum = [];
+const doubleValue = (value) => {
+    return value + value;
+};
 for (let i = 0; i < numbers.length; i++) {
     let number = Number(numbers[i]);
     numbersConverted.push(number);
@@ -14,6 +18,7 @@ for (let i = 0; i < numbers.length; i++) {
     if (number < min) {
         min = number;
     }
+    doubleNum.push(doubleValue(number));
 }
 ;
 let average = sum / numbersConverted.length;
@@ -23,4 +28,5 @@ console.log("Sum: ", sum);
 console.log("Average: ", average);
 console.log("Max Number: ", max);
 console.log("Min Number:", min);
+console.log("Double Numbers", doubleNum);
 //# sourceMappingURL=index.js.map

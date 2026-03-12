@@ -5,6 +5,7 @@
     "outDir": "dist",
     "sourceMap": true,
     "strict": true,
+    "noImplicitAny": false,
     "target": "es2015"
   },
   "include": ["src"]
