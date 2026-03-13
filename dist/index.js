@@ -1,6 +1,8 @@
 "use strict";
 let numbers = ["10", "5", "20", "8", "3"];
+let bigNumbers = [9007199254740991n, 9007199254740992n, 9007199254740993n];
 let numbersConverted = [];
+let bigNumbersSum = 0n;
 let sum = 0;
 let max = Number(numbers[0]);
 let min = Number(numbers[0]);
@@ -11,6 +13,10 @@ const doubleValueSafe = (value) => {
     }
     return undefined;
 };
+for (let b = 0; b < bigNumbers.length; b++) {
+    bigNumbersSum = bigNumbersSum + bigNumbers[b];
+}
+;
 for (let i = 0; i < numbers.length; i++) {
     let number = Number(numbers[i]);
     numbersConverted.push(number);
@@ -35,4 +41,5 @@ console.log("Average: ", average);
 console.log("Max Number: ", max);
 console.log("Min Number:", min);
 console.log("Double Numbers", doubleNum);
+console.log("Big Numbers Sum: ", bigNumbersSum);
 //# sourceMappingURL=index.js.map
