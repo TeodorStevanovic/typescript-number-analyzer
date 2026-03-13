@@ -35,12 +35,12 @@ for (let i = 0; i < numbers.length; i++) {
 ;
 let average = sum / numbersConverted.length;
 let analysis = {
-    sum,
-    max,
-    min,
-    average,
-    doubleNum,
-    bigNumbersSum,
+    "Numbers Sum": sum,
+    "Numbers Max Number": max,
+    "Numbers Min Number": min,
+    "Numbers Average": average,
+    "Double Numbers": doubleNum,
+    "Big Numbers Sum": bigNumbersSum,
 };
 console.log("Analysis ", analysis);
 //# sourceMappingURL=index.js.map

@@ -44,14 +44,14 @@ for (let i = 0; i < numbers.length; i++) {
 
 let average: number = sum / numbersConverted.length;
 
-let analysis: { sum: number, max: number, min: number, average: number, doubleNum: number[], bigNumbersSum: bigint, } =
+let analysis: { [key: string]: number | number[] | bigint } =
 {
-    sum,
-    max,
-    min,
-    average,
-    doubleNum,
-    bigNumbersSum,
+    "Numbers Sum": sum,
+    "Numbers Max Number": max,
+    "Numbers Min Number": min,
+    "Numbers Average": average,
+    "Double Numbers": doubleNum,
+    "Big Numbers Sum": bigNumbersSum,
 };
 
 
