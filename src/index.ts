@@ -44,12 +44,15 @@ for (let i = 0; i < numbers.length; i++) {
 
 let average: number = sum / numbersConverted.length;
 
-console.log(numbers);
-console.log("Numbers: ", numbersConverted);
-console.log("Sum: ", sum);
-console.log("Average: ", average);
-console.log("Max Number: ", max);
-console.log("Min Number:", min);
-console.log("Double Numbers", doubleNum);
+let analysis: { sum: number, max: number, min: number, average: number, doubleNum: number[], bigNumbersSum: bigint, } =
+{
+    sum,
+    max,
+    min,
+    average,
+    doubleNum,
+    bigNumbersSum,
+};
 
-console.log("Big Numbers Sum: ", bigNumbersSum);
+
+console.log("Analysis ", analysis);

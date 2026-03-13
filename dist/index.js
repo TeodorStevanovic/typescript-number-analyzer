@@ -34,12 +34,13 @@ for (let i = 0; i < numbers.length; i++) {
 }
 ;
 let average = sum / numbersConverted.length;
-console.log(numbers);
-console.log("Numbers: ", numbersConverted);
-console.log("Sum: ", sum);
-console.log("Average: ", average);
-console.log("Max Number: ", max);
-console.log("Min Number:", min);
-console.log("Double Numbers", doubleNum);
-console.log("Big Numbers Sum: ", bigNumbersSum);
+let analysis = {
+    sum,
+    max,
+    min,
+    average,
+    doubleNum,
+    bigNumbersSum,
+};
+console.log("Analysis ", analysis);
 //# sourceMappingURL=index.js.map
